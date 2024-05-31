@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dark and Light Mode Switcher</title>
+</head>
+<body>
+  <h1>Switch Mode</h1>
+  <button id="switchMode">Toggle Dark/Light Mode</button>
+  <script src="popup.js"></script>
+</body>
+</html>

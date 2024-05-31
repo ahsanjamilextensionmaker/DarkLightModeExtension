@@ -1,0 +1,8 @@
+document.getElementById('switchMode').addEventListener('click', () => {
+  chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
+    chrome.tabs.executeScript(
+      tabs[0].id,
+      {code: 'document.body.style.filter = document.body.style.filter === "invert(1)" ? "invert(0)" : "invert(1)";'}
+    );
+  });
+});

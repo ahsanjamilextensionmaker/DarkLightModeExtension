@@ -1,0 +1,6 @@
+chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.tabs.executeScript(
+    tab.id,
+    {code: 'document.body.style.filter = document.body.style.filter === "invert(1)" ? "invert(0)" : "invert(1)";'}
+  );
+});
